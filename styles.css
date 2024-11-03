@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://images2.alphacoders.com/101/thumb-1920-1014592.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #f0134d;
+    text-shadow: 0 0 10px #f0134d;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Login/Register Buttons */
+.auth-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #f0134d;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background: #d00;
+}
+
+/* Forms */
+.auth-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(240, 19, 77, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form h2 {
+    margin-bottom: 10px;
+    color: #f7ca18;
+    border-bottom: 2px solid #f7ca18;
+}
+
+.auth-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #eaeaea;
+}
+
+.auth-form button {
+    width: 100%;
+    background: #f0134d;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Animations */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #f0134d;
+    }
+    to {
+        text-shadow: 0 0 20px #f0134d, 0 0 30px #f0134d;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Man Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Iron Man's Training Dashboard</h1>
+        <div class="auth-buttons">
+            <button id="login-btn">Login</button>
+            <button id="register-btn">Register</button>
+        </div>
+    </header>
+
+    <!-- Login Form -->
+    <section id="login-section" class="auth-form hidden">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Register Form -->
+    <section id="register-section" class="auth-form hidden">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="reg-username" placeholder="Username" required>
+            <input type="email id" id="reg-email" placeholder="email id" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+                        <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="classes-section">
+        <h2>ADVANCE TRAINING</h2>
+        <div id="classes">
+            <!-- Class details will be injected here -->
+        </div>
+    </section>
+
+    <section id="attendance-section">
+        <!-- <h2>Attendance Record</h2> -->
+        <p>Attendance Percentage: <span id="attendance-percentage">0%</span></p>
+        <button id="mark-attendance">Mark Attendance</button>
+    </section>
+
+   
+            <!-- Reminder notifications will appear here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
